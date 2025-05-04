@@ -197,3 +197,69 @@ test_cases:
 - response: 76306620E01011E55
   expected_values:
     NISSAN_ODO: 73301
+- response: 76306620E01011E56
+  expected_values:
+    NISSAN_ODO: 73302
+- response: 76306620E01011E57
+  expected_values:
+    NISSAN_ODO: 73303
+- response: 76306620E01011E58
+  expected_values:
+    NISSAN_ODO: 73304
+- response: 76306620E01011E59
+  expected_values:
+    NISSAN_ODO: 73305
+- response: 76306620E01011E5A
+  expected_values:
+    NISSAN_ODO: 73306
+- response: 76306620E01011E5B
+  expected_values:
+    NISSAN_ODO: 73307
+- response: 76306620E01011E5C
+  expected_values:
+    NISSAN_ODO: 73308
+- response: 76306620E01011E5D
+  expected_values:
+    NISSAN_ODO: 73309
+- response: 76306620E01011E5E
+  expected_values:
+    NISSAN_ODO: 73310
+- response: 76306620E01011E5F
+  expected_values:
+    NISSAN_ODO: 73311
+- response: 76306620E01011E60
+  expected_values:
+    NISSAN_ODO: 73312
+- response: 76306620E01011E61
+  expected_values:
+    NISSAN_ODO: 73313
+- response: 76306620E01011E62
+  expected_values:
+    NISSAN_ODO: 73314
+- response: 76306620E01011E63
+  expected_values:
+    NISSAN_ODO: 73315
+- response: 76306620E01011E64
+  expected_values:
+    NISSAN_ODO: 73316
+- response: 76306620E01011E65
+  expected_values:
+    NISSAN_ODO: 73317
+- response: 76306620E01011E66
+  expected_values:
+    NISSAN_ODO: 73318
+- response: 76306620E01011E67
+  expected_values:
+    NISSAN_ODO: 73319
+- response: 76306620E01011E68
+  expected_values:
+    NISSAN_ODO: 73320
+- response: 76306620E01011E69
+  expected_values:
+    NISSAN_ODO: 73321
+- response: 76306620E01011E6A
+  expected_values:
+    NISSAN_ODO: 73322
+- response: 76306620E01011E6B
+  expected_values:
+    NISSAN_ODO: 73323
