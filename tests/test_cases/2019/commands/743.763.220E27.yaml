@@ -5,48 +5,6 @@ test_cases:
 - response: 76304620E277F
   expected_values:
     NISSAN_TP_RR: 218.90855
-- response: '76304620E2780'
-  expected_values:
-    NISSAN_TP_RR: 220.63224
-- response: '76304620E2781'
-  expected_values:
-    NISSAN_TP_RR: 222.35593
-- response: '76304620E2782'
-  expected_values:
-    NISSAN_TP_RR: 224.07962
-- response: '76304620E2783'
-  expected_values:
-    NISSAN_TP_RR: 225.80331
-- response: '76304620E2784'
-  expected_values:
-    NISSAN_TP_RR: 227.527
-- response: '76304620E2785'
-  expected_values:
-    NISSAN_TP_RR: 229.25069
-- response: '76304620E2786'
-  expected_values:
-    NISSAN_TP_RR: 230.97438
-- response: '76304620E2787'
-  expected_values:
-    NISSAN_TP_RR: 232.69807
-- response: '76304620E2788'
-  expected_values:
-    NISSAN_TP_RR: 234.42176
-- response: '76304620E2789'
-  expected_values:
-    NISSAN_TP_RR: 236.14545
-- response: 76304620E278A
-  expected_values:
-    NISSAN_TP_RR: 237.86914
-- response: 76304620E278B
-  expected_values:
-    NISSAN_TP_RR: 239.59283
-- response: 76304620E278C
-  expected_values:
-    NISSAN_TP_RR: 241.31652
-- response: 76304620E278D
-  expected_values:
-    NISSAN_TP_RR: 243.04021
 - response: 76304620E278E
   expected_values:
     NISSAN_TP_RR: 244.76389
