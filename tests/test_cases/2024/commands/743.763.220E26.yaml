@@ -2,6 +2,33 @@ command_id: 743.763.220E26
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
+- response: 76304620E268A
+  expected_values:
+    NISSAN_TP_FL: 237.86914
+- response: 76304620E268C
+  expected_values:
+    NISSAN_TP_FL: 241.31652
+- response: 76304620E268D
+  expected_values:
+    NISSAN_TP_FL: 243.04021
+- response: 76304620E268E
+  expected_values:
+    NISSAN_TP_FL: 244.76389
+- response: 76304620E268F
+  expected_values:
+    NISSAN_TP_FL: 246.48758
+- response: '76304620E2690'
+  expected_values:
+    NISSAN_TP_FL: 248.21127
+- response: '76304620E2691'
+  expected_values:
+    NISSAN_TP_FL: 249.93496
+- response: '76304620E2692'
+  expected_values:
+    NISSAN_TP_FL: 251.65865
+- response: '76304620E2693'
+  expected_values:
+    NISSAN_TP_FL: 253.38234
 - response: '76304620E2694'
   expected_values:
     NISSAN_TP_FL: 255.10603
