@@ -5,6 +5,6 @@ test_cases:
 - response: 76304620E257B
   expected_values:
     NISSAN_TP_FR: 212.0138
-- response: 76304620E258E
+- response: '76304620E2590'
   expected_values:
-    NISSAN_TP_FR: 244.76389
+    NISSAN_TP_FR: 248.21127

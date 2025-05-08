@@ -2,9 +2,9 @@ command_id: 743.763.220E28
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: '76304620E2880'
+- response: 76304620E287F
   expected_values:
-    NISSAN_TP_RL: 220.63224
-- response: 76304620E288D
+    NISSAN_TP_RL: 218.90855
+- response: 76304620E288E
   expected_values:
-    NISSAN_TP_RL: 243.04021
+    NISSAN_TP_RL: 244.76389

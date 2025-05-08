@@ -8,9 +8,9 @@ test_cases:
 - response: 7E804410C1900
   expected_values:
     RPM: 1600
-- response: 7E804410C21FC
+- response: 7E804410C29FE
   expected_values:
-    RPM: 2175
-- response: 7E804410C53CA
+    RPM: 2687.5
+- response: 7E804410C5816
   expected_values:
-    RPM: 5362.5
+    RPM: 5637.5

@@ -11,9 +11,9 @@ test_cases:
 - response: 7E90441422E62
   expected_values:
     VPWR: 11.874
-- response: 7E904414230F8
+- response: 7E90441422FFA
   expected_values:
-    VPWR: 12.536
+    VPWR: 12.282
 - response: '7E90441423476'
   expected_values:
     VPWR: 13.43
