@@ -1,0 +1,19 @@
+command_id: 743.763.220E27
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 76304620E277B
+  expected_values:
+    NISSAN_TP_RR: 212.0138
+- response: 76304620E277C
+  expected_values:
+    NISSAN_TP_RR: 213.73749
+- response: 76304620E277D
+  expected_values:
+    NISSAN_TP_RR: 215.46118
+- response: 76304620E277E
+  expected_values:
+    NISSAN_TP_RR: 217.18486
+- response: 76304620E277F
+  expected_values:
+    NISSAN_TP_RR: 218.90855
