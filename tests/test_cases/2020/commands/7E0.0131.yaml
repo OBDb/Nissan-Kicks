@@ -5,15 +5,6 @@ test_cases:
 - response: 7E80441319FE6
   expected_values:
     CLR_DIST: 40934
-- response: 7E80441319FE7
-  expected_values:
-    CLR_DIST: 40935
-- response: 7E80441319FE9
-  expected_values:
-    CLR_DIST: 40937
-- response: 7E80441319FEA
-  expected_values:
-    CLR_DIST: 40938
 - response: 7E80441319FEB
   expected_values:
     CLR_DIST: 40939
