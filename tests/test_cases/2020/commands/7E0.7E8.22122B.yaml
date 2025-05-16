@@ -2,12 +2,12 @@ command_id: 7E0.7E8.22122B
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E80562122B0456
+- response: 7E80562122B0405
   expected_values:
     NISSAN_CC_S: 255
-- response: 7E80562122B0495
+- response: 7E80562122B04CE
   expected_values:
     NISSAN_CC_S: 255
-- response: 7E80562122B04B1
+- response: 7E80562122B080B
   expected_values:
     NISSAN_CC_S: 255
