@@ -1,6 +1,4 @@
 command_id: 7E0.0146
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: '7E803414628'
   expected_values:
@@ -8,3 +6,68 @@ test_cases:
 - response: 7E80341463B
   expected_values:
     AAT: 19
+- response: |-
+    > 743.763.220E26
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414631
+  expected_values:
+    AAT: 9
+- response: |-
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414634
+  expected_values:
+    AAT: 12
+- response: |-
+    > 797.79A.221152
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414644
+  expected_values:
+    AAT: 28
+- response: |-
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414642
+  expected_values:
+    AAT: 26
+- response: |-
+    > 797.79A.22131A
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414627
+  expected_values:
+    AAT: -1
+- response: |-
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414627
+  expected_values:
+    AAT: -1
+- response: |-
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414630
+  expected_values:
+    AAT: 8

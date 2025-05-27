@@ -1,6 +1,4 @@
 command_id: 7E0.0142
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: 7E80441422DA0
   expected_values:
@@ -8,12 +6,60 @@ test_cases:
 - response: '7E80441423200'
   expected_values:
     VPWR: 12.8
+- response: 7E90441422E8F
+  expected_values:
+    VPWR: 11.919
 - response: 7E904414230FE
   expected_values:
     VPWR: 12.542
-- response: '7E90441423476'
-  expected_values:
-    VPWR: 13.43
 - response: '7E90441423922'
   expected_values:
     VPWR: 14.626
+- response: |-
+    > 743.763.220E28
+    NO DATA
+    > 743.763.220E2E
+    NO DATA
+    > 7E0.7E8.0142
+    7E80441422F80
+  expected_values:
+    VPWR: 12.16
+- response: |-
+    > 797.79A.221255
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.0142
+    7E80441422F80
+  expected_values:
+    VPWR: 12.16
+- response: |-
+    > 797.79A.221261
+    NO DATA
+    > 7E0.7E8.0142
+    7E80441422EE0
+  expected_values:
+    VPWR: 12
+- response: |-
+    > 7E0.7E8.0142
+    7E804414233E0
+  expected_values:
+    VPWR: 13.28
+- response: |-
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 7E0.7E8.0142
+    7E80441423070
+  expected_values:
+    VPWR: 12.4
+- response: |-
+    NO DATA
+    > 7E0.7E8.0142
+    7E80441422DA0
+  expected_values:
+    VPWR: 11.68
