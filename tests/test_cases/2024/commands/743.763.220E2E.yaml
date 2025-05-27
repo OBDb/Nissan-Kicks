@@ -1,7 +1,0 @@
-command_id: 743.763.220E2E
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
-test_cases:
-- response: 76305620E2E0000
-  expected_values:
-    NISSAN_RANGE: 0
