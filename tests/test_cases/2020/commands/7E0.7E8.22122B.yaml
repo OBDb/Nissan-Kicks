@@ -1,0 +1,371 @@
+command_id: 7E0.7E8.22122B
+test_cases:
+- response: 7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: 7E80562122B080B
+  expected_values:
+    NISSAN_CC_S: 255
+- response: 7E80562122B08F0
+  expected_values:
+    NISSAN_CC_S: 255
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 743.763.220E26
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 743.763.220E28
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 743.763.220E2E
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221151
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221156
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 743.763.220E2E
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221205
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221234
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221255
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221261
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221262
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221318
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221318
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 797.79A.221318
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.221186
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.221186
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0
+- response: |-
+    NO DATA
+    > 7E0.7E8.22122B
+    7E80562122B0000
+  expected_values:
+    NISSAN_CC_S: 0

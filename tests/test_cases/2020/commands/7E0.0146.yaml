@@ -3,9 +3,89 @@ test_cases:
 - response: '7E803414628'
   expected_values:
     AAT: 0
-- response: 7E80341463B
+- response: '7E803414649'
   expected_values:
-    AAT: 19
+    AAT: 33
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462A
+  expected_values:
+    AAT: 2
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414645
+  expected_values:
+    AAT: 29
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414637
+  expected_values:
+    AAT: 15
+- response: |-
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414632
+  expected_values:
+    AAT: 10
+- response: |-
+    > 743.763.220E25
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414633
+  expected_values:
+    AAT: 11
+- response: |-
+    > 743.763.220E26
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341463D
+  expected_values:
+    AAT: 21
 - response: |-
     > 743.763.220E26
     NO DATA
@@ -27,6 +107,84 @@ test_cases:
   expected_values:
     AAT: 12
 - response: |-
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414633
+  expected_values:
+    AAT: 11
+- response: |-
+    > 743.763.220E27
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414629
+  expected_values:
+    AAT: 1
+- response: |-
+    > 743.763.220E27
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414632
+  expected_values:
+    AAT: 10
+- response: |-
+    > 743.763.220E28
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462C
+  expected_values:
+    AAT: 4
+- response: |-
+    > 743.763.220E2E
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341464F
+  expected_values:
+    AAT: 39
+- response: |-
+    > 797.79A.22110F
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414636
+  expected_values:
+    AAT: 14
+- response: |-
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462B
+  expected_values:
+    AAT: 3
+- response: |-
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 743.763.220E2E
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462C
+  expected_values:
+    AAT: 4
+- response: |-
     > 797.79A.221152
     NO DATA
     > 743.763.220E27
@@ -45,12 +203,83 @@ test_cases:
   expected_values:
     AAT: 26
 - response: |-
+    > 797.79A.221234
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462C
+  expected_values:
+    AAT: 4
+- response: |-
+    > 797.79A.221255
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414649
+  expected_values:
+    AAT: 33
+- response: |-
+    > 797.79A.22131A
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414624
+  expected_values:
+    AAT: -4
+- response: |-
     > 797.79A.22131A
     NO DATA
     > 7E0.7E8.0146
     7E803414627
   expected_values:
     AAT: -1
+- response: |-
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341464F
+  expected_values:
+    AAT: 39
+- response: |-
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414639
+  expected_values:
+    AAT: 17
+- response: |-
+    > 7E0.7E8.0146
+    7E803414627
+  expected_values:
+    AAT: -1
+- response: |-
+    > 7E0.7E8.0146
+    7E80341463E
+  expected_values:
+    AAT: 22
+- response: |-
+    > 7E0.7E8.0146
+    7E803414643
+  expected_values:
+    AAT: 27
+- response: |-
+    > 7E0.7E8.221266
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414634
+  expected_values:
+    AAT: 12
 - response: |-
     NO DATA
     > 743.763.220E01
@@ -67,7 +296,39 @@ test_cases:
     AAT: -1
 - response: |-
     NO DATA
+    > 743.763.220E01
+    NO DATA
     > 7E0.7E8.0146
-    7E803414630
+    7E80341462C
   expected_values:
-    AAT: 8
+    AAT: 4
+- response: |-
+    NO DATA
+    > 743.763.220E2E
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341463C
+  expected_values:
+    AAT: 20
+- response: |-
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.0146
+    7E803414633
+  expected_values:
+    AAT: 11
+- response: |-
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341462C
+  expected_values:
+    AAT: 4
+- response: |-
+    NO DATA
+    > 7E0.7E8.0146
+    7E80341463E
+  expected_values:
+    AAT: 22

@@ -1,17 +1,17 @@
 command_id: 7E0.0131
 test_cases:
-- response: 7E8044131A07E
+- response: 7E80441319F97
   expected_values:
-    CLR_DIST: 41086
+    CLR_DIST: 40855
 - response: 7E8044131A1FF
   expected_values:
     CLR_DIST: 41471
 - response: 7E8044131A200
   expected_values:
     CLR_DIST: 41472
-- response: 7E8044131A449
+- response: 7E8044131A535
   expected_values:
-    CLR_DIST: 42057
+    CLR_DIST: 42293
 - response: |-
     > 743.763.220E01
     NO DATA
@@ -19,6 +19,24 @@ test_cases:
     7E8044131A0AD
   expected_values:
     CLR_DIST: 41133
+- response: |-
+    > 743.763.220E27
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FBF
+  expected_values:
+    CLR_DIST: 40895
+- response: |-
+    > 743.763.220E28
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A5C4
+  expected_values:
+    CLR_DIST: 42436
 - response: |-
     > 743.763.220E28
     NO DATA
@@ -33,6 +51,22 @@ test_cases:
   expected_values:
     CLR_DIST: 40844
 - response: |-
+    > 743.763.220E28
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A450
+  expected_values:
+    CLR_DIST: 42064
+- response: |-
+    > 797.79A.22110F
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A06D
+  expected_values:
+    CLR_DIST: 41069
+- response: |-
     > 797.79A.22110F
     NO DATA
     > 797.79A.221318
@@ -41,6 +75,311 @@ test_cases:
     7E8044131A07D
   expected_values:
     CLR_DIST: 41085
+- response: |-
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 743.763.220E27
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A0B4
+  expected_values:
+    CLR_DIST: 41140
+- response: |-
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A234
+  expected_values:
+    CLR_DIST: 41524
+- response: |-
+    > 797.79A.221152
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A034
+  expected_values:
+    CLR_DIST: 41012
+- response: |-
+    > 797.79A.221152
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A479
+  expected_values:
+    CLR_DIST: 42105
+- response: |-
+    > 797.79A.221152
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FE5
+  expected_values:
+    CLR_DIST: 40933
+- response: |-
+    > 797.79A.221205
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FD7
+  expected_values:
+    CLR_DIST: 40919
+- response: |-
+    > 797.79A.221205
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FA4
+  expected_values:
+    CLR_DIST: 40868
+- response: |-
+    > 797.79A.221234
+    NO DATA
+    > 797.79A.22131A
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A02F
+  expected_values:
+    CLR_DIST: 41007
+- response: |-
+    > 797.79A.221236
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FE8
+  expected_values:
+    CLR_DIST: 40936
+- response: |-
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319FC6
+  expected_values:
+    CLR_DIST: 40902
+- response: |-
+    > 797.79A.221255
+    NO DATA
+    > 797.79A.221262
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A412
+  expected_values:
+    CLR_DIST: 42002
+- response: |-
+    > 797.79A.221261
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A067
+  expected_values:
+    CLR_DIST: 41063
+- response: |-
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221318
+    NO DATA
+    > 7E0.7E8.221266
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 797.79A.221156
+    NO DATA
+    > 797.79A.221152
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A485
+  expected_values:
+    CLR_DIST: 42117
+- response: |-
+    > 797.79A.221262
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A279
+  expected_values:
+    CLR_DIST: 41593
+- response: |-
+    > 797.79A.221318
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A19C
+  expected_values:
+    CLR_DIST: 41372
+- response: |-
+    > 797.79A.22131A
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 743.763.220E28
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A44C
+  expected_values:
+    CLR_DIST: 42060
+- response: |-
+    > 79B.7BB.2101
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0131
+    7E80441319F96
+  expected_values:
+    CLR_DIST: 40854
+- response: |-
+    > 79B.7BB.2101
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A020
+  expected_values:
+    CLR_DIST: 40992
+- response: |-
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A459
+  expected_values:
+    CLR_DIST: 42073
+- response: |-
+    > 7E0.7E8.0131
+    7E80441319FB2
+  expected_values:
+    CLR_DIST: 40882
+- response: |-
+    > 7E0.7E8.0131
+    7E80441319FC8
+  expected_values:
+    CLR_DIST: 40904
+- response: |-
+    > 7E0.7E8.0131
+    7E8044131A043
+  expected_values:
+    CLR_DIST: 41027
+- response: |-
+    > 7E0.7E8.0131
+    7E8044131A3DE
+  expected_values:
+    CLR_DIST: 41950
+- response: |-
+    > 7E0.7E8.0131
+    7E8044131A480
+  expected_values:
+    CLR_DIST: 42112
+- response: |-
+    > 7E0.7E8.221266
+    NO DATA
+    > 797.79A.221236
+    NO DATA
+    > 743.763.220E01
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 797.79A.221261
+    NO DATA
+    > 79B.7BB.2101
+    NO DATA
+    > 743.763.220E2E
+    NO DATA
+    > 797.79A.22110F
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A485
+  expected_values:
+    CLR_DIST: 42117
+- response: |-
+    NO DATA
+    > 743.763.220E25
+    NO DATA
+    > 797.79A.221255
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A491
+  expected_values:
+    CLR_DIST: 42129
+- response: |-
+    NO DATA
+    > 743.763.220E26
+    NO DATA
+    > 797.79A.221234
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A3DB
+  expected_values:
+    CLR_DIST: 41947
+- response: |-
+    NO DATA
+    > 797.79A.221151
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A5B8
+  expected_values:
+    CLR_DIST: 42424
+- response: |-
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 79B.7BB.2161
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A559
+  expected_values:
+    CLR_DIST: 42329
+- response: |-
+    NO DATA
+    > 797.79A.221205
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A0AC
+  expected_values:
+    CLR_DIST: 41132
 - response: |-
     NO DATA
     > 797.79A.221262
@@ -55,3 +394,11 @@ test_cases:
     7E8044131A237
   expected_values:
     CLR_DIST: 41527
+- response: |-
+    NO DATA
+    > 7E0.7E8.221186
+    NO DATA
+    > 7E0.7E8.0131
+    7E8044131A42D
+  expected_values:
+    CLR_DIST: 42029
