@@ -1,8 +1,8 @@
 command_id: 743.763.220E28|fc=1
 test_cases:
-- response: '76304620E2800'
+- response: 76304620E2800
   expected_values:
-    NISSAN_TP_RL: 0
-- response: '76304620E2890'
+    KICKS_TP_RL: 0
+- response: 76304620E2890
   expected_values:
-    NISSAN_TP_RL: 248.21127
+    KICKS_TP_RL: 248.21127
