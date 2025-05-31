@@ -1,4 +1,31 @@
 { "commands": [
-
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E01"}, "freq": 1, "dbgfilter": { "from": 2025, "to": 2017, "years": [2020, 2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E25"}, "freq": 15, "dbgfilter": { "from": 2025, "to": 2017, "years": [2020, 2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E26"}, "freq": 15, "dbgfilter": { "from": 2025, "to": 2017, "years": [2020, 2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E27"}, "freq": 15, "dbgfilter": { "from": 2025, "to": 2017, "years": [2020, 2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E28"}, "freq": 15, "dbgfilter": { "from": 2025, "to": 2017, "years": [2020, 2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E2E"}, "freq": 1, "dbgfilter": { "from": 2025, "to": 2023 },
+  "signals": [
+    {"id": "KICKS_RANGE", "path": "Trips", "fmt": { "len": 16, "max": 6553.5, "unit": "kilometers" }, "name": "Range remaining", "suggestedMetric": "electricRange"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122B"}, "freq": 30, "dbgfilter": { "from": 2025, "to": 2017, "years": [2021, 2022, 2023] },
+  "signals": [
+    {"id": "KICKS_CC_S", "path": "Cruise control", "fmt": { "len": 16, "max": 255, "unit": "scalar" }, "name": "Cruise control speed"}
+  ]}
 ]
 }

@@ -1,20 +1,20 @@
 command_id: 743.763.220E28|fc=1
 test_cases:
-- response: '76304620E2879'
+- response: 76304620E2879
   expected_values:
-    NISSAN_TP_RL: 208.56642
+    KICKS_TP_RL: 208.56642
 - response: 76304620E287A
   expected_values:
-    NISSAN_TP_RL: 210.29011
+    KICKS_TP_RL: 210.29011
 - response: 76304620E287B
   expected_values:
-    NISSAN_TP_RL: 212.0138
+    KICKS_TP_RL: 212.0138
 - response: 76304620E287C
   expected_values:
-    NISSAN_TP_RL: 213.73749
+    KICKS_TP_RL: 213.73749
 - response: 76304620E287D
   expected_values:
-    NISSAN_TP_RL: 215.46118
+    KICKS_TP_RL: 215.46117
 - response: 76304620E287E
   expected_values:
-    NISSAN_TP_RL: 217.18486
+    KICKS_TP_RL: 217.18486
