@@ -1,4 +1,163 @@
 { "commands": [
-
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E01"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E25"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E26"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E27"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E28"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E2E"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RANGE", "path": "Trips", "fmt": { "len": 16, "max": 6553.5, "unit": "kilometers" }, "name": "Range remaining", "suggestedMetric": "electricRange"}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1103"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_VPWR", "path": "Battery", "fmt": { "len": 8, "max": 30, "div": 12.5, "unit": "volts" }, "name": "12V battery voltage"}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "110F"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_HTR_REAR", "path": "Climate", "name": "Rear heater state", "fmt": {"len": 8, "map": {
+          "162": { "description": "Heater is on", "value": "HEATER_ON" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1146"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_MOTOR_PWR", "path": "Engine", "fmt": { "len": 16, "max": 2621400, "mul": 40, "unit": "watts" }, "name": "Motor power"}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1151"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_AC_PWR", "path": "Battery.Draw", "fmt": { "len": 8, "max": 63750, "mul": 250, "unit": "watts" }, "name": "Power used by both the A/C and PTC heater."}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1152"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_AUX_PWR", "path": "Battery.Draw", "fmt": { "len": 8, "max": 25500, "mul": 100, "unit": "watts" }, "name": "Power used by auxiliary equipment (lights, radio, navigation, rear defroster, etc...)."}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1156"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_GEAR", "path": "Engine", "name": "Gear", "fmt": {"len": 8, "map": {
+          "1": { "description": "Park",    "value": "PARK" },
+          "2": { "description": "Reverse", "value": "REVERSE" },
+          "3": { "description": "Neutral", "value": "NEUTRAL" },
+          "4": { "description": "Drive",   "value": "DRIVE" },
+          "7": { "description": "Eco",     "value": "ECO" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1205"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_L1L2CHRG_CNT", "path": "Battery.Statistics", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Quick charge count", "description": "Increments each time an L1/L2 charge occurs, even if only partially."}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1234"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_CHARGE_PLUG", "path": "Battery", "name": "L1/L2 charge port plug state", "suggestedMetric": "pluggedIn", "fmt": {"len": 8, "map": {
+          "0": { "description": "Not plugged in",       "value": "UNPLUGGED" },
+          "1": { "description": "Partially plugged in", "value": "PLUGGED_PARTIAL" },
+          "2": { "description": "Plugged in",           "value": "PLUGGED" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1236"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_CHRG_PWR", "path": "Battery", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "watts" }, "name": "Charging power", "description": "Power entering the high voltage battery while charging."}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1255"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_RPM", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32767, "sign": true, "unit": "scalar" }, "name": "Engine RPM"}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1261"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_AC_PWR_EST", "path": "Battery.Draw", "fmt": { "len": 8, "max": 12750, "mul": 50, "unit": "watts" }, "name": "Power used by air conditioning"}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1262"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_HTR_PWR", "path": "Battery.Draw", "fmt": { "len": 8, "max": 63750, "mul": 250, "unit": "watts" }, "name": "Power used by cabin positive temperature coefficient (PTC) heaters."}
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "1318"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_ECO_MODE", "path": "Climate", "name": "ECO mode state", "fmt": {"len": 8, "map": {
+          "0":  { "description": "ECO is off", "value": "ECO_OFF" },
+          "16": { "description": "ECO is on",  "value": "ECO_ON_1" },
+          "17": { "description": "ECO is on",  "value": "ECO_ON_2" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "fcm1": true, "dbg": true, "cmd": {"22": "131A"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_EPEDAL_MODE", "path": "Control", "name": "E-pedal mode", "fmt": {"len": 8, "map": {
+          "0": { "description": "E-pedal mode is off", "value": "EPEDAL_OFF" },
+          "4": { "description": "E-pedal mode is on",  "value": "EPEDAL_ON" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "1106"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_AC_ON", "path": "Climate", "fmt": { "len": 8, "max": 1, "unit": "offon" }, "name": "A/C state"}
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "114E"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_CHARGE_MODE", "path": "Battery", "name": "Charging mode", "suggestedMetric": "isCharging", "fmt": {"len": 8, "map": {
+          "0": { "description": "Not charging",           "value": "NOT_CHARGING" },
+          "1": { "description": "L1 charging (100-120V)", "value": "CHARGING_L1" },
+          "2": { "description": "L2 charging (200-240V)", "value": "CHARGING_L2" },
+          "3": { "description": "L3 quick charging",      "value": "CHARGING_L3" }
+        }}
+    }
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "115D"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_AAT", "path": "Climate", "fmt": { "len": 8, "max": 192.69, "min": -36.81, "mul": 0.9, "add": -40.9, "unit": "fahrenheit" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "1183"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_12V_CURR", "path": "Battery", "fmt": { "len": 16, "max": 128, "min": -128, "div": 256, "sign": true, "unit": "amps" }, "name": "12V battery current"}
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "1203"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_QCKCHRG_CNT", "path": "Battery.Statistics", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Quick charge count", "description": "Increments each time a quick charge occurs, even if only partially."}
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "121A"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_VSS", "path": "Movement", "fmt": { "len": 16, "max": 1000, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "797", "rax": "79A", "fcm1": true, "cmd": {"22": "1304"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "KICKS_IGN", "path": "Engine", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Power switch"}
+  ]},
+{ "hdr": "79B", "fcm1": true, "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_HVBAT_VOLT", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 655,  "div": 100,               "unit": "volts"       }, "name": "High voltage battery voltage"},
+    {"id": "KICKS_HVBAT_SOC",  "path": "Battery", "fmt": {"bix": 248, "len": 24, "max": 100,  "div": 8190,  "add": -17, "unit": "percent"     }, "name": "High voltage battery charge",   "suggestedMetric": "stateOfCharge"},
+    {"id": "KICKS_HVBAT_CAP",  "path": "Battery", "fmt": {"bix": 280, "len": 24, "max": 1000, "div": 10000,             "unit": "ampereHours" }, "name": "High voltage battery capacity"}
+  ]},
+{ "hdr": "79B", "fcm1": true, "dbg": true, "cmd": {"21": "61"}, "freq": 3600,
+  "signals": [
+    {"id": "KICKS_HVBAT_SOH", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "High voltage battery health", "suggestedMetric": "stateOfHealth", "description": "When the battery is new, its health should be ~100%."}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "1186"}, "freq": 30,
+  "signals": [
+    {"id": "KICKS_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel remaining"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "1266"}, "freq": 30,
+  "signals": [
+    {"id": "KICKS_VVTO_T", "path": "Fluids", "fmt": { "len": 16, "max": 500, "min": -500, "mul": 3, "div": 128, "add": -273, "unit": "celsius" }, "name": "VVT oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122B"}, "freq": 30, "dbgfilter": { "to": 2017, "years": [2021, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_CC_S", "path": "Cruise control", "fmt": { "len": 16, "max": 255, "unit": "scalar" }, "name": "Cruise control speed"}
+  ]}
 ]
 }
