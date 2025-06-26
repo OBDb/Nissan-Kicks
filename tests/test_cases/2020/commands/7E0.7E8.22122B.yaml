@@ -1,11 +1,11 @@
 command_id: 7E0.7E8.22122B
 test_cases:
-- response: 7E80562122B0000
-  expected_values:
+- expected_values:
     NISSAN_CC_S: 0
-- response: 7E80562122B04B1
-  expected_values:
+  response: 7E80562122B0000
+- expected_values:
     NISSAN_CC_S: 255
-- response: 7E80562122B0625
-  expected_values:
+  response: 7E80562122B04B1
+- expected_values:
     NISSAN_CC_S: 255
+  response: 7E80562122B0625

@@ -1,14 +1,14 @@
 command_id: 743.763.220E01|fc=1
 test_cases:
-- response: 76306620E01011E15
-  expected_values:
+- expected_values:
     NISSAN_ODO: 73237
-- response: 76306620E01011EFF
-  expected_values:
+  response: 76306620E01011E15
+- expected_values:
     NISSAN_ODO: 73471
-- response: 76306620E01011F00
-  expected_values:
+  response: 76306620E01011EFF
+- expected_values:
     NISSAN_ODO: 73472
-- response: '76306620E01012100'
-  expected_values:
-    NISSAN_ODO: 73984
+  response: 76306620E01011F00
+- expected_values:
+    NISSAN_ODO: 75065
+  response: '76306620E01012539'
