@@ -1,5 +1,5 @@
 command_id: 743.763.220E2E|fc=1
 test_cases:
-- response: 76305620E2E0000
-  expected_values:
+- expected_values:
     NISSAN_RANGE: 0
+  response: 76305620E2E0000
