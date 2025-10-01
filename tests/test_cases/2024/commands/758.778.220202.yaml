@@ -1,0 +1,17 @@
+command_id: 758.778.220202
+test_cases:
+- expected_values:
+    NISSAN_TP_FR: 0
+  response: '7780462020200'
+- expected_values:
+    NISSAN_TP_FR: 33.5
+  response: '7780462020286'
+- expected_values:
+    NISSAN_TP_FR: 33.75
+  response: '7780462020287'
+- expected_values:
+    NISSAN_TP_FR: 34
+  response: '7780462020288'
+- expected_values:
+    NISSAN_TP_FR: 34.25
+  response: '7780462020289'
