@@ -1,8 +1,8 @@
 command_id: '744.224008'
 test_cases:
 - expected_values:
-    NISSAN_AAT: 12
-  response: '7640462400834'
+    NISSAN_AAT: 7
+  response: 764046240082F
 - expected_values:
     NISSAN_AAT: 24
   response: '7640462400840'
