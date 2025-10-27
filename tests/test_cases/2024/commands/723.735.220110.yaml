@@ -4,8 +4,8 @@ test_cases:
     NISSAN_STEER_ANGLE: 0
   response: '735056201100000'
 - expected_values:
-    NISSAN_STEER_ANGLE: -24.6
-  response: 73505620110FF0A
+    NISSAN_STEER_ANGLE: -25
+  response: 73505620110FF06
 - expected_values:
     NISSAN_STEER_ANGLE: -0.1
   response: 73505620110FFFF
