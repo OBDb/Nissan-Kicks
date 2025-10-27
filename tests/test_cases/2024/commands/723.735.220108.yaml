@@ -4,8 +4,8 @@ test_cases:
     NISSAN_RADAR_SPEED: 0
   response: '735056201080000'
 - expected_values:
-    NISSAN_RADAR_SPEED: -25.3
-  response: 73505620108FF03
+    NISSAN_RADAR_SPEED: -25.7
+  response: 73505620108FEFF
 - expected_values:
-    NISSAN_RADAR_SPEED: -0.1
-  response: 73505620108FFFF
+    NISSAN_RADAR_SPEED: -25.6
+  response: 73505620108FF00
