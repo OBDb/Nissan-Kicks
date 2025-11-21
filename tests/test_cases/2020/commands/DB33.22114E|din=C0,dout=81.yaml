@@ -1,0 +1,8 @@
+command_id: DB33.22114E|din=C0,dout=81
+test_cases:
+- expected_values:
+    NI_AFRATB1S1: 20.39216
+  response: 7E80462114E34
+- expected_values:
+    NI_AFRATB1S1: 30.98039
+  response: 7E80462114E4F
