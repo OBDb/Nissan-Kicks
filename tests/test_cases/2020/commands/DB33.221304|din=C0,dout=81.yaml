@@ -1,0 +1,7 @@
+command_id: DB33.221304|din=C0,dout=81
+test_cases:
+- expected_values:
+    NI_AC_PRESSURE: 0
+    NI_HEATER_FAN: 0
+    NI_IGN: 1
+  response: '7E8056213048090'
