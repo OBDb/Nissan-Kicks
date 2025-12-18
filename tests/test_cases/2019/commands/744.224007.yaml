@@ -16,5 +16,8 @@ test_cases:
     NISSAN_AC_STATUS: 10
   response: 764076240070A400000
 - expected_values:
+    NISSAN_AC_STATUS: 32
+  response: '7640762400720000000'
+- expected_values:
     NISSAN_AC_STATUS: 40
   response: '7640762400728000000'
