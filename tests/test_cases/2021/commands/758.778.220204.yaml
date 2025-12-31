@@ -1,0 +1,5 @@
+command_id: 758.778.220204
+test_cases:
+- expected_values:
+    NISSAN_TP_RL: 0
+  response: '7780462020400'
