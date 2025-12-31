@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22122B
+test_cases:
+- expected_values:
+    NISSAN_CC_S: 0
+  response: 7E80562122B0000

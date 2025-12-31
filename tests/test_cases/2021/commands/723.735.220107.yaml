@@ -1,0 +1,14 @@
+command_id: 723.735.220107
+test_cases:
+- expected_values:
+    NISSAN_RADAR_DISTANCE: 7.7
+  response: 73505620107004D
+- expected_values:
+    NISSAN_RADAR_DISTANCE: 7.8
+  response: 73505620107004E
+- expected_values:
+    NISSAN_RADAR_DISTANCE: 7.9
+  response: 73505620107004F
+- expected_values:
+    NISSAN_RADAR_DISTANCE: 8.7
+  response: '735056201070057'
