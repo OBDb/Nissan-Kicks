@@ -26,6 +26,7 @@ supported_commands_by_ecu:
   "797":
   - 797.79A.221183|fc=1:NISSAN_12V_CURR
   "7DF":
+  - 7DF.0110
   - 7DF.0131
   - 7DF.0142
   "7E0":
