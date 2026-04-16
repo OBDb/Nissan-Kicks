@@ -1,0 +1,8 @@
+command_id: 743.763.220E28|fc=1
+test_cases:
+- expected_values:
+    NISSAN_TP_RL_V2: 170.64525
+  response: '76304620E2863'
+- expected_values:
+    NISSAN_TP_RL_V2: 439.5
+  response: 76304620E28FF
