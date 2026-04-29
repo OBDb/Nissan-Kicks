@@ -1,0 +1,20 @@
+command_id: 743.763.220E27|fc=1
+test_cases:
+- expected_values:
+    NISSAN_TP_RR_V2: 163.75049
+  response: 76304620E275F
+- expected_values:
+    NISSAN_TP_RR_V2: 165.47418
+  response: '76304620E2760'
+- expected_values:
+    NISSAN_TP_RR_V2: 167.19787
+  response: '76304620E2761'
+- expected_values:
+    NISSAN_TP_RR_V2: 172.36894
+  response: '76304620E2764'
+- expected_values:
+    NISSAN_TP_RR_V2: 174.09263
+  response: '76304620E2765'
+- expected_values:
+    NISSAN_TP_RR_V2: 439.5
+  response: 76304620E27FF
