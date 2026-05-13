@@ -1,0 +1,8 @@
+command_id: '744.224007'
+test_cases:
+- expected_values:
+    NISSAN_AC_STATUS: 0
+  response: '7640762400700000000'
+- expected_values:
+    NISSAN_AC_STATUS: 8
+  response: '7640762400708400000'
