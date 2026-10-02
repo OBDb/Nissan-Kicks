@@ -1,0 +1,20 @@
+command_id: 758.778.22020E
+test_cases:
+- expected_values:
+    NISSAN_TPW_FR: 27
+  response: 7780462020E6C
+- expected_values:
+    NISSAN_TPW_FR: 27.25
+  response: 7780462020E6D
+- expected_values:
+    NISSAN_TPW_FR: 27.75
+  response: 7780462020E6F
+- expected_values:
+    NISSAN_TPW_FR: 28
+  response: '7780462020E70'
+- expected_values:
+    NISSAN_TPW_FR: 28.5
+  response: '7780462020E72'
+- expected_values:
+    NISSAN_TPW_FR: 28.75
+  response: '7780462020E73'

@@ -1,4 +1,4 @@
-command_id: '744.224008'
+command_id: 744.764.224008
 test_cases:
 - expected_values:
     NISSAN_AAT: 30

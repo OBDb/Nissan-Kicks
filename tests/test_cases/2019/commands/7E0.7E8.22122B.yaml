@@ -4,8 +4,8 @@ test_cases:
     NISSAN_CC_S: 0
   response: 7E80562122B0000
 - expected_values:
-    NISSAN_CC_S: 255
-  response: 7E80562122B07EF
+    NISSAN_CC_S: 71.4375
+  response: 7E80562122B04F6
 - expected_values:
-    NISSAN_CC_S: 255
-  response: 7E80562122B080B
+    NISSAN_CC_S: 131.9625
+  response: 7E80562122B092A

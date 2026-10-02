@@ -1,0 +1,6 @@
+command_id: 758.778.220202
+test_cases:
+- expected_values:
+    NISSAN_FR_TIRE_P: 31.5
+    NISSAN_TP_FR_V2: 31.5
+  response: 778046202027E

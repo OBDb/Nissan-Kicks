@@ -1,5 +1,5 @@
 command_id: 758.778.22020D
 test_cases:
 - expected_values:
-    NISSAN_TPW_FL: 0
+    NISSAN_TPW_FL: null
   response: 7780462020D00
