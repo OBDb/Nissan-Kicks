@@ -1,37 +1,29 @@
 command_id: 758.778.220204
 test_cases:
 - expected_values:
-    NISSAN_RL_TIRE_P: 0
+    KICKS_TP_RL_758: null
   response: '7780462020400'
 - expected_values:
-    NISSAN_RL_TIRE_P: 28.5
-    NISSAN_TP_RL_V2: 28.5
+    KICKS_TP_RL_758: 28.5
   response: '7780462020472'
 - expected_values:
-    NISSAN_RL_TIRE_P: 28.75
-    NISSAN_TP_RL_V2: 28.75
+    KICKS_TP_RL_758: 28.75
   response: '7780462020473'
 - expected_values:
-    NISSAN_RL_TIRE_P: 29
-    NISSAN_TP_RL_V2: 29
+    KICKS_TP_RL_758: 29
   response: '7780462020474'
 - expected_values:
-    NISSAN_RL_TIRE_P: 29.25
-    NISSAN_TP_RL_V2: 29.25
+    KICKS_TP_RL_758: 29.25
   response: '7780462020475'
 - expected_values:
-    NISSAN_RL_TIRE_P: 29.5
-    NISSAN_TP_RL_V2: 29.5
+    KICKS_TP_RL_758: 29.5
   response: '7780462020476'
 - expected_values:
-    NISSAN_RL_TIRE_P: 29.75
-    NISSAN_TP_RL_V2: 29.75
+    KICKS_TP_RL_758: 29.75
   response: '7780462020477'
 - expected_values:
-    NISSAN_RL_TIRE_P: 30
-    NISSAN_TP_RL_V2: 30
+    KICKS_TP_RL_758: 30
   response: '7780462020478'
 - expected_values:
-    NISSAN_RL_TIRE_P: 30.25
-    NISSAN_TP_RL_V2: 30.25
+    KICKS_TP_RL_758: 30.25
   response: '7780462020479'

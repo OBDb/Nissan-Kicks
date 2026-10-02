@@ -1,4 +1,573 @@
 { "commands": [
-
+{ "hdr": "707", "rax": "727", "cmd": {"22": "0103"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TURN_SIGNAL_RIGHT", "path": "Control", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Right turn signal"},
+    {"id": "KICKS_TURN_SIGNAL_LEFT",  "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Left turn signal"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0101"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_YAW_RATE", "path": "Control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Yaw rate"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0107"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RADAR_DISTANCE", "path": "Cruise control", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "meters" }, "name": "Radar distance"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0108"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RADAR_SPEED", "path": "Cruise control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "metersPerSecond" }, "name": "Relative speed"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0110"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle", "description": "Negative values are clockwise, positive values are counter-clockwise."}
+  ]},
+{ "hdr": "740", "rax": "760", "fcm1": true, "dbg": true, "cmd": {"22": "1102"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ABS_FL_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "740", "rax": "760", "fcm1": true, "dbg": true, "cmd": {"22": "1103"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ABS_FR_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "740", "rax": "760", "fcm1": true, "dbg": true, "cmd": {"22": "1104"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ABS_RL_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "740", "rax": "760", "fcm1": true, "dbg": true, "cmd": {"22": "1105"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ABS_RR_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "740", "rax": "760", "dbg": true, "cmd": {"22": "1115"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_APP", "path": "Control", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "740", "rax": "760", "fcm1": true, "dbg": true, "cmd": {"22": "1208"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ABS_STEER_ANG", "path": "Control", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Anti-lock brake steering angle"}
+  ]},
+{ "hdr": "740", "rax": "760", "dbg": true, "cmd": {"22": "1209"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_BRAKE_MC_P", "path": "Control", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Brake master cylinder pressure count"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"21": "01"}, "freq": 30,
+  "signals": [
+    {"id": "KICKS_ODO_METER", "path": "Trips", "fmt": {"bix": 56, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"22": "0E00"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_METER_VSS_OUT", "path": "Movement", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Vehicle speed output", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E01"}, "freq": 30, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "miles" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"22": "0E03"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_METER_FUEL", "path": "Fuel", "fmt": { "len": 8, "max": 204, "mul": 4, "div": 5, "unit": "liters" }, "name": "Fuel gauge volume"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"22": "0E04"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_METER_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature gauge", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"22": "0E09"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_METER_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outside air temperature"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E25"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "nullmin": 0, "nullmax": 439.5, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E26"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "nullmin": 0, "nullmax": 439.5, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E27"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "nullmin": 0, "nullmax": 439.5, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E28"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 439.5, "mul": 1.7236894, "nullmin": 0, "nullmax": 439.5, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E2E"}, "freq": 30, "dbgfilter": { "to": 2021, "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RANGE", "path": "Trips", "fmt": { "len": 16, "max": 2047, "nullmin": 0, "nullmax": 2047, "unit": "kilometers" }, "name": "Range remaining"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "dbg": true, "cmd": {"22": "F40D"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_METER_VSS", "path": "Movement", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Speedometer speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"21": "10"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_HVAC_AAT",      "path": "Climate", "fmt": {            "len": 8,  "max": 215,   "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature, climate module"},
+    {"id": "KICKS_HVAC_CABIN_T",  "path": "Climate", "fmt": {"bix": 8,   "len": 8,  "max": 215,   "min": -40, "add": -40, "unit": "celsius" }, "name": "Cabin temperature"},
+    {"id": "KICKS_HVAC_EVAP_T",   "path": "Climate", "fmt": {"bix": 16,  "len": 8,  "max": 215,   "min": -40, "add": -40, "unit": "celsius" }, "name": "Evaporator temperature"},
+    {"id": "KICKS_HVAC_SUNLOAD",  "path": "Climate", "fmt": {"bix": 24,  "len": 8,  "max": 255,                           "unit": "scalar"  }, "name": "Sun load"},
+    {"id": "KICKS_HVAC_AC_ON",    "path": "Climate", "fmt": {"bix": 80,  "len": 1,  "max": 1,                             "unit": "offon"   }, "name": "Air conditioning on"},
+    {"id": "KICKS_HVAC_FAN_ON",   "path": "Climate", "fmt": {"bix": 88,  "len": 1,  "max": 1,                             "unit": "offon"   }, "name": "Blower on"},
+    {"id": "KICKS_HVAC_BLOWER_V", "path": "Climate", "fmt": {"bix": 89,  "len": 7,  "max": 127,                           "unit": "volts"   }, "name": "Blower voltage"},
+    {"id": "KICKS_AC_COMP_RPM",   "path": "Climate", "fmt": {"bix": 168, "len": 16, "max": 65535,                         "unit": "rpm"     }, "name": "Air conditioning compressor speed"}
+  ]},
+{ "hdr": "744", "rax": "764", "fcm1": true, "din": "C0", "dbg": true, "cmd": {"21": "53"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_IH",                      "path": "Engine", "fmt": {            "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_feetventactrposition"},
+    {"id": "KICKS_IH_LEFTMIXACTRPOSITION",  "path": "Engine", "fmt": {"bix": 8,   "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_leftmixactrposition"},
+    {"id": "KICKS_IH_RECYACTRPOSITION",     "path": "Engine", "fmt": {"bix": 16,  "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_recyactrposition"},
+    {"id": "KICKS_IH_RIGHTMIXACTRPOSITION", "path": "Engine", "fmt": {"bix": 24,  "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_rightmixactrposition"},
+    {"id": "KICKS_IH_DEFACTRPOSITION",      "path": "Engine", "fmt": {"bix": 32,  "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_defactrposition"},
+    {"id": "KICKS_IH_RESERVEACTRPOSITION",  "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_reserveactrposition"},
+    {"id": "KICKS_OH_FEETVENTACTRREQ",      "path": "Engine", "fmt": {"bix": 48,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_feetventactrreq"},
+    {"id": "KICKS_OH_LEFTMIXACTRREQ",       "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_leftmixactrreq"},
+    {"id": "KICKS_OH_RECYACTRREQ",          "path": "Engine", "fmt": {"bix": 64,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_recyactrreq"},
+    {"id": "KICKS_OH_RIGHTMIXACTRREQ",      "path": "Engine", "fmt": {"bix": 72,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_rightmixactrreq"},
+    {"id": "KICKS_OH_DEFACTRREQ",           "path": "Engine", "fmt": {"bix": 80,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_defactrreq"},
+    {"id": "KICKS_OH_RESERVEACTRREQ",       "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_reserveactrreq"},
+    {"id": "KICKS_IH_REARMIXACTRPOSITION",  "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "percent" }, "name": "Ih_rearmixactrposition"},
+    {"id": "KICKS_OH_REARMIXACTRREQ",       "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "percent" }, "name": "Oh_rearmixactrreq"}
+  ]},
+{ "hdr": "744", "rax": "764", "cmd": {"22": "4007"}, "freq": 5, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_AC_STATUS", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Air conditioning status"}
+  ]},
+{ "hdr": "744", "rax": "764", "cmd": {"22": "4008"}, "freq": 5, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmax": 215, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "fcm1": true, "dbg": true, "cmd": {"22": "426C"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_AC_REFRIGERANT_P", "path": "Climate", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "bars" }, "name": "Refrigerant pressure"}
+  ]},
+{ "hdr": "744", "rax": "764", "cmd": {"22": "F467"}, "freq": 5, "dbgfilter": { "to": 2017, "years": [2020, 2021, 2022, 2023, 2025], "from": 2027 },
+  "signals": [
+    {"id": "KICKS_ECT", "path": "Climate", "fmt": { "len": 8, "max": 214, "min": -40, "add": -40, "nullmax": 214, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1103"}, "freq": 1, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_ELECTRONIC", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 0.02, "div": 50, "unit": "offon" }, "name": "All-wheel drive electronic traction support solenoid"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1104"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_REQ_ENG_TQ", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 0, "min": -2.5, "mul": 5, "div": 2, "sign": true, "unit": "offon" }, "name": "All-wheel drive request engine torque"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1105"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_ESTIMATED_ENG_TQ", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 0, "min": -2.5, "mul": 5, "div": 2, "sign": true, "unit": "offon" }, "name": "All-wheel drive estimated engine torque"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1107"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_TGT_TRACTION", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 2, "mul": 2, "unit": "offon" }, "name": "AWD, target traction control torque"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1114"}, "freq": 5, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_COUPLING_T", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "All-wheel drive coupling temperature"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1201"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_FR_WHL_SPD", "path": "Tires", "fmt": {"bix": 7, "len": 1, "max": 0.0039, "mul": 256, "div": 65535, "unit": "offon" }, "name": "All-wheel drive front right wheel speed"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1202"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_FL_WHL_SPD", "path": "Tires", "fmt": {"bix": 7, "len": 1, "max": 0.0039, "mul": 256, "div": 65535, "unit": "offon" }, "name": "All-wheel drive front left wheel speed"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1203"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_RR_WHL_SPD", "path": "Tires", "fmt": {"bix": 7, "len": 1, "max": 0.0039, "mul": 256, "div": 65535, "unit": "offon" }, "name": "All-wheel drive rear right wheel speed"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1204"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_RL_WHL_SPD", "path": "Tires", "fmt": {"bix": 7, "len": 1, "max": 0.0039, "mul": 256, "div": 65535, "unit": "offon" }, "name": "All-wheel drive rear left wheel speed"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1314"}, "freq": 5, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_CLU_HIGH_T_SIG_1", "path": "Transmission", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "All-wheel drive clutch high temperature signal 1"}
+  ]},
+{ "hdr": "748", "rax": "768", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1315"}, "freq": 5, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_AWD_CLU_HIGH_T_SIG_2", "path": "Transmission", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "All-wheel drive clutch high temperature signal 2"}
+  ]},
+{ "hdr": "758", "rax": "778", "fcm1": true, "dbg": true, "cmd": {"21": "10"}, "freq": 15,
+  "signals": [
+    {"id": "KICKS_WHL_1_P", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Wheel 1 pressure"},
+    {"id": "KICKS_WHL_2_P", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Wheel 2 pressure"},
+    {"id": "KICKS_WHL_3_P", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Wheel 3 pressure"},
+    {"id": "KICKS_WHL_4_P", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Wheel 4 pressure"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "0201"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_FL_758", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "0202"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_FR_758", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "0203"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_RR_758", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "0204"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TP_RL_758", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "020D"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TPW_FL", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure, warning"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "020E"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TPW_FR", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure, warning"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "020F"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TPW_RR", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure, warning"}
+  ]},
+{ "hdr": "758", "rax": "778", "cmd": {"22": "0210"}, "freq": 15, "dbgfilter": { "to": 2017, "years": [2020, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_TPW_RL", "path": "Tires", "fmt": { "len": 8, "max": 63.75, "div": 4, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure, warning"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "69"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_ALTERNATOR_SETPOINT_V", "path": "Battery", "fmt": { "len": 16, "max": 1310, "div": 50, "unit": "volts" }, "name": "ALTERNATOR set point VOLTAGE"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "AD"}, "freq": 3600,
+  "signals": [
+    {"id": "KICKS_COLD_STARTING",      "path": "Engine",  "fmt": {            "len": 8,  "max": 255,                                                             "unit": "scalar"         }, "name": "Cold starting programming"},
+    {"id": "KICKS_FUEL_RAIL_T_SENS_V", "path": "Battery", "fmt": {"bix": 8,   "len": 8,  "max": 4.98,               "mul": 5,         "div": 256,                "unit": "volts"          }, "name": "Fuel rail temperature sensor voltage"},
+    {"id": "KICKS_FUEL_RAIL_T",        "path": "Fuel",    "fmt": {"bix": 16,  "len": 8,  "max": 143,   "min": -48,  "mul": 3,         "div": 4,     "add": -48,  "unit": "celsius"        }, "name": "Fuel rail temperature"},
+    {"id": "KICKS_VAPOR_LOCK_T",       "path": "Engine",  "fmt": {"bix": 24,  "len": 8,  "max": 143,   "min": -48,  "mul": 3,         "div": 4,     "add": -48,  "unit": "celsius"        }, "name": "Vapor lock temperature"},
+    {"id": "KICKS_FUEL_TANK_T_SENS_V", "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 4.98,               "mul": 5,         "div": 256,                "unit": "volts"          }, "name": "Fuel tank temperature sensor voltage"},
+    {"id": "KICKS_FUEL_TANK_T",        "path": "Fuel",    "fmt": {"bix": 40,  "len": 8,  "max": 143,   "min": -48,  "mul": 3,         "div": 4,     "add": -48,  "unit": "celsius"        }, "name": "Fuel tank temperature"},
+    {"id": "KICKS_TANK_P",             "path": "Engine",  "fmt": {"bix": 120, "len": 16, "max": 32767,                                "div": 2,                  "unit": "unknown"        }, "name": "Tank pressure"},
+    {"id": "KICKS_LPLI_PMP_PWM_SIG",   "path": "Engine",  "fmt": {"bix": 160, "len": 16, "max": 99.99,              "mul": 0.0015259,                            "unit": "percent"        }, "name": "Low-pressure fuel pump drive duty"},
+    {"id": "KICKS_FUEL_PMP_FLOW",      "path": "Fuel",    "fmt": {"bix": 176, "len": 8,  "max": 31.87,                                "div": 8,                  "unit": "gramsPerSecond" }, "name": "Fuel pump flow"},
+    {"id": "KICKS_EFP_LEARNING",       "path": "Engine",  "fmt": {"bix": 184, "len": 16, "max": 0.5,   "min": -0.5,                   "div": 65535, "add": -0.5, "unit": "percent"        }, "name": "Electric fuel pump learning value"},
+    {"id": "KICKS_BUTANE_PERCENTAGE",  "path": "Engine",  "fmt": {"bix": 200, "len": 8,  "max": 99.61,              "mul": 7813,      "div": 20000,              "unit": "percent"        }, "name": "Butane percentage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "112A"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_MANIFOLD_P_SENS_V", "path": "Battery", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Manifold pressure sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "113C"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_IGN_ADVANCE", "path": "Engine", "fmt": { "len": 8, "max": 112, "min": -143, "mul": -1, "add": 112, "unit": "scalar" }, "name": "Ignition advance"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1206"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_INJ_PW", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "milliseconds" }, "name": "Injection pulse width"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1223"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_REFRIGERANT_FLUID_V", "path": "Battery", "fmt": { "len": 16, "max": 327, "div": 200, "unit": "volts" }, "name": "Refrigerant fluid sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1225"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_UP_OXYGEN_SENS_V", "path": "Battery", "fmt": { "len": 16, "max": 327, "div": 200, "unit": "volts" }, "name": "Upstream oxygen sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1287"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ENG_TGT_TQ", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine target torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1307"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_AC_COMP",        "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "scalar" }, "name": "Air conditioning compressor"},
+    {"id": "KICKS_IDLE_CTRL_MODE", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "scalar" }, "name": "Idle control mode"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "130D"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_BRAKE_SWITCH_NUMBER_2", "path": "Control", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "BRAKE SWITCH, number 2"},
+    {"id": "KICKS_BRAKE_SWITCH_NUMBER_1", "path": "Control", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "BRAKE SWITCH, number 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1313"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_COOLING_FAN_LOW",  "path": "Engine", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "scalar" }, "name": "Cooling fan low"},
+    {"id": "KICKS_COOLING_FAN_HIGH", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "scalar" }, "name": "Cooling fan high"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1406"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_ECT_7E0", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "140E"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_MANIFOLD_P", "path": "Engine", "fmt": { "len": 8, "max": 255000, "mul": 1000, "unit": "unknown" }, "name": "Manifold pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "140F"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_THROTTLE_OPENING", "path": "Engine", "fmt": { "len": 8, "max": 89.25, "mul": 7, "div": 20, "unit": "degrees" }, "name": "Throttle opening"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2004"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 32367, "min": -400, "div": 2, "add": -400, "unit": "newtonMeters" }, "name": "Engine torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "200F"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_BRAKING_DETECTED", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Braking detected multiplex signal"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2026"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_WIRED_BRAKE_CONTACT", "path": "Control", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Wired brake contact"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "204B"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_CRUISE_CTRL_SPD", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Cruise control/speed limiter buttons"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2079"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_PARKING_BRAKE",       "path": "Control",      "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"},
+    {"id": "KICKS_CRUISE_CTRL",         "path": "Engine",       "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Cruise control"},
+    {"id": "KICKS_TRACTION_CTRL_ANTI",  "path": "Engine",       "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Traction control/anti-yaw control"},
+    {"id": "KICKS_ENGAGE_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Engage reverse gear"},
+    {"id": "KICKS_STARTER_BUTTON",      "path": "Engine",       "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Starter button"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "207A"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_DUR_RESUME_BUTTON", "path": "Engine", "fmt": { "len": 16, "max": 3276, "div": 20, "unit": "seconds" }, "name": "Duration of resume button press"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "207B"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_DUR_BUTTON_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3276, "div": 20, "unit": "seconds" }, "name": "Duration of + button press"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "207C"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_DUR_BUTTON_PRESS_7E0", "path": "Engine", "fmt": { "len": 16, "max": 3276, "div": 20, "unit": "seconds" }, "name": "Duration of - button press"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "207D"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_DUR_SUSPEND_BUTTON", "path": "Engine", "fmt": { "len": 16, "max": 3276, "div": 20, "unit": "seconds" }, "name": "Duration of suspend button press"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "207E"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_NUM_ABNORMAL_CC_SL", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of abnormal cc/sl transitions"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2170"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_CHANGE_VSS_UNIT", "path": "Movement", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Change of vehicle speed unit"},
+    {"id": "KICKS_AUTO_EMERGENCY",  "path": "Engine",   "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon" }, "name": "Auto emergency braking system request"},
+    {"id": "KICKS_STOP_WARN_LIGHT", "path": "Lights",   "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Stop warning light"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2225"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_VSS_MULTIPLEXED", "path": "Movement", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Vehicle speed multiplexed information"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "222B"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_MANUAL_OR_ASSISTED", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Manual or assisted parking brake"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "22AA"}, "freq": 3600,
+  "signals": [
+    {"id": "KICKS_STARTER_WEAR_CNT", "path": "Engine", "fmt": {"bix": 40, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Starter wear counter"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2C04"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_GEARBOX_RAT", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gearbox ratio"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TRANS_ATF", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Transmission ATF deterioration date"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"21": "10"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TRANS_B",                   "path": "Transmission", "fmt": {            "len": 16, "max": 65535,           "unit": "scalar" }, "name": "Transmission-B"},
+    {"id": "KICKS_TRANS_WORK_HOURS",          "path": "Transmission", "fmt": {"bix": 32,  "len": 16, "max": 10922, "div": 6, "unit": "hours"  }, "name": "Transmission work hours"},
+    {"id": "KICKS_TRANS",                     "path": "Transmission", "fmt": {"bix": 64,  "len": 8,  "max": 255,             "unit": "scalar" }, "name": "Transmission-A"},
+    {"id": "KICKS_TRANS_WORK_HOURS_WARM_ENG", "path": "Transmission", "fmt": {"bix": 192, "len": 16, "max": 10922, "div": 6, "unit": "hours"  }, "name": "Transmission work hours warm engine"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1101"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_VSS_SENS", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed sensor"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1102"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_VSS_EST", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Estimated vehicle speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1103"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110A"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_P", "path": "Transmission", "fmt": { "len": 16, "max": 1638375, "mul": 25, "unit": "kilopascal" }, "name": "Secondary pulley pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110B"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_P", "path": "Transmission", "fmt": { "len": 16, "max": 1638375, "mul": 25, "unit": "kilopascal" }, "name": "Primary pulley pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110C"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_TCM_ATF_T", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110D"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_LUBE_P", "path": "Transmission", "fmt": { "len": 8, "max": 1270, "min": -1280, "mul": 10, "sign": true, "unit": "kilopascal" }, "name": "Lubrication pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110E"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_LINE_P", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "kilopascal" }, "name": "Line pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110F"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_P_TGT", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "kilopascal" }, "name": "Target primary pulley pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1110"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEL_P_TGT", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "kilopascal" }, "name": "Target select pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1111"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_P_TGT", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "kilopascal" }, "name": "Target secondary pulley pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1112"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_REQ_TQ_D", "path": "Transmission", "fmt": { "len": 8, "max": 354, "min": -156, "mul": 2, "add": 100, "sign": true, "unit": "newtonMeters" }, "name": "Requested torque delta"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1113"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_REQ_TQ", "path": "Transmission", "fmt": { "len": 8, "max": 354, "min": -156, "mul": 2, "add": 100, "sign": true, "unit": "newtonMeters" }, "name": "Requested torque"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1114"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_REQ_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 12750, "mul": 50, "unit": "rpm" }, "name": "Requested engine speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1201"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_INPUT_RPM", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Input speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1202"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_RPM", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Primary pulley speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1203"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_RPM", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Secondary pulley speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1204"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_RPM", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Engine speed", "suggestedMetric": "engineSpeed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1205"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_P_V", "path": "Transmission", "fmt": { "len": 16, "max": 320, "mul": 5, "div": 1023, "unit": "volts" }, "name": "Secondary pressure sensor voltage"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1206"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_P_V", "path": "Transmission", "fmt": { "len": 16, "max": 320, "mul": 5, "div": 1023, "unit": "volts" }, "name": "Primary pressure sensor voltage"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1207"}, "freq": 5,
+  "signals": [
+    {"id": "KICKS_TCM_ATF_T_V", "path": "Transmission", "fmt": { "len": 16, "max": 320, "mul": 5, "div": 1023, "unit": "volts" }, "name": "Fluid temperature sensor voltage"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1208"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_G_V", "path": "Transmission", "fmt": { "len": 16, "max": 3.27, "min": -3.27, "div": 10000, "sign": true, "unit": "volts" }, "name": "Acceleration sensor voltage"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "120C"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_INPUT_RPM_2", "path": "Transmission", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Input speed, alternate"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "120D"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_RPM_2", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Primary pulley speed, alternate"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "120E"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_RPM_2", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Secondary pulley speed, alternate"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "120F"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_RPM_2", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Engine speed, alternate"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1210"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PULLEY_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 6.55, "div": 10000, "unit": "scalar" }, "name": "Pulley ratio"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1212"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_ENG_TQ_ACT", "path": "Transmission", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine torque, active"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1213"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_ENG_TQ_TX", "path": "Transmission", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine torque, transmitted"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1214"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_ENG_TQ", "path": "Transmission", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine torque"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1215"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_TQ", "path": "Transmission", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Primary pulley torque"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1216"}, "freq": 0.25,
+  "signals": [
+    {"id": "KICKS_TCM_TQ_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 236, "mul": 577, "div": 160000, "unit": "scalar" }, "name": "Torque ratio"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1218"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PULLEY_RAT_TGT", "path": "Transmission", "fmt": { "len": 16, "max": 6.55, "div": 10000, "unit": "scalar" }, "name": "Target pulley ratio"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1219"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_ISO_1_C", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Isolation solenoid 1 current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121A"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_ISO_2_C", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Isolation solenoid 2 current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121B"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_SOL_C", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Primary solenoid current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121C"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_SOL_C", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Secondary solenoid current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121D"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEL_SOL_C", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Select solenoid current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121E"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SOL_MON_1", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Solenoid 1 monitor current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "121F"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SOL_MON_2", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Solenoid 2 monitor current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1221"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_PRI_SOL_MON", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Primary solenoid monitor current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1222"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEC_SOL_MON", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Secondary solenoid monitor current"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1223"}, "freq": 1,
+  "signals": [
+    {"id": "KICKS_TCM_SEL_SOL_MON", "path": "Transmission", "fmt": { "len": 8, "max": 0.255, "div": 1000, "unit": "amps" }, "name": "Select solenoid monitor current"}
+  ]},
+{ "hdr": "DA15", "rax": "15", "dbg": true, "cmd": {"22": "1207"}, "freq": 1, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_BASE_INJ_TIM", "path": "Engine", "fmt": { "len": 16, "max": 31.99, "div": 2048, "unit": "milliseconds" }, "name": "Base injection timing"}
+  ]},
+{ "hdr": "DA15", "rax": "15", "dbg": true, "cmd": {"22": "121F"}, "freq": 1, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_ROLL_OVER_SENS_V", "path": "Battery", "fmt": { "len": 16, "max": 327, "div": 200, "unit": "volts" }, "name": "Roll-over sensor voltage"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2170"}, "freq": 5, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_ATF_T", "path": "Transmission", "fmt": {"bix": 232, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "DA2D", "rax": "2D", "dbg": true, "cmd": {"22": "4B00"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_FL_WHL_SPD", "path": "Tires", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "DA2D", "rax": "2D", "dbg": true, "cmd": {"22": "4B01"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_FR_WHL_SPD", "path": "Tires", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "DA2D", "rax": "2D", "dbg": true, "cmd": {"22": "4B02"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RL_WHL_SPD", "path": "Tires", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "DA2D", "rax": "2D", "dbg": true, "cmd": {"22": "4B03"}, "freq": 0.25, "filter": { "from": 2025 },
+  "signals": [
+    {"id": "KICKS_RR_WHL_SPD", "path": "Tires", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]}
 ]
 }

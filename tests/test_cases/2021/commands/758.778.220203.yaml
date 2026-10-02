@@ -1,5 +1,5 @@
 command_id: 758.778.220203
 test_cases:
 - expected_values:
-    NISSAN_RR_TIRE_P: 0
+    KICKS_TP_RR_758: null
   response: '7780462020300'

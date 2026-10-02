@@ -1,9 +1,8 @@
 command_id: 758.778.220202
 test_cases:
 - expected_values:
-    NISSAN_FR_TIRE_P: 0
+    KICKS_TP_FR_758: null
   response: '7780462020200'
 - expected_values:
-    NISSAN_FR_TIRE_P: 30.5
-    NISSAN_TP_FR_V2: 30.5
+    KICKS_TP_FR_758: 30.5
   response: 778046202027A

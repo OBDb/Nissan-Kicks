@@ -1,6 +1,5 @@
 command_id: 758.778.220201
 test_cases:
 - expected_values:
-    NISSAN_FL_TIRE_P: 31.75
-    NISSAN_TP_FL_V2: 31.75
+    KICKS_TP_FL_758: 31.75
   response: 778046202017F

@@ -1,6 +1,5 @@
 command_id: 758.778.220204
 test_cases:
 - expected_values:
-    NISSAN_RL_TIRE_P: 31.5
-    NISSAN_TP_RL_V2: 31.5
+    KICKS_TP_RL_758: 31.5
   response: 778046202047E
