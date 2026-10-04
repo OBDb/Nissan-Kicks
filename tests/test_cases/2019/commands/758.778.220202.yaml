@@ -1,8 +1,8 @@
 command_id: 758.778.220202
 test_cases:
 - expected_values:
-    NISSAN_TP_FR: 0
+    KICKS_TP_FR_758: null
   response: '7780462020200'
 - expected_values:
-    NISSAN_TP_FR: 32.75
-  response: '7780462020283'
+    KICKS_TP_FR_758: 39
+  response: 778046202029C

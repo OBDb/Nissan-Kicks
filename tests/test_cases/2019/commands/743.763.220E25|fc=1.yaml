@@ -1,8 +1,8 @@
 command_id: 743.763.220E25|fc=1
 test_cases:
 - expected_values:
-    NISSAN_TP_FR_V2: 0
+    KICKS_TP_FR: null
   response: '76304620E2500'
 - expected_values:
-    NISSAN_TP_FR_V2: 253.38234
-  response: '76304620E2593'
+    KICKS_TP_FR: 268.89555
+  response: 76304620E259C

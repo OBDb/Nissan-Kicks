@@ -1,11 +1,11 @@
 command_id: 723.735.220101
 test_cases:
 - expected_values:
-    NISSAN_YAW_RATE: 0
+    KICKS_YAW_RATE: 0
   response: '735056201010000'
 - expected_values:
-    NISSAN_YAW_RATE: 25.5
+    KICKS_YAW_RATE: 25.5
   response: 7350562010100FF
 - expected_values:
-    NISSAN_YAW_RATE: -25.6
+    KICKS_YAW_RATE: -25.6
   response: 73505620101FF00

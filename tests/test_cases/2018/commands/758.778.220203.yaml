@@ -1,0 +1,5 @@
+command_id: 758.778.220203
+test_cases:
+- expected_values:
+    KICKS_TP_RR_758: 31.25
+  response: 778046202037D

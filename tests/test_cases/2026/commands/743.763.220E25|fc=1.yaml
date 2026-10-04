@@ -1,0 +1,8 @@
+command_id: 743.763.220E25|fc=1
+test_cases:
+- expected_values:
+    KICKS_TP_FR: 155.13205
+  response: 76304620E255A
+- expected_values:
+    KICKS_TP_FR: null
+  response: 76304620E25FF

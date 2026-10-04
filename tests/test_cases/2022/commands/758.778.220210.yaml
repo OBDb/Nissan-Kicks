@@ -1,0 +1,14 @@
+command_id: 758.778.220210
+test_cases:
+- expected_values:
+    KICKS_TPW_RL: 24.75
+  response: '7780462021063'
+- expected_values:
+    KICKS_TPW_RL: 25
+  response: '7780462021064'
+- expected_values:
+    KICKS_TPW_RL: 25.5
+  response: '7780462021066'
+- expected_values:
+    KICKS_TPW_RL: 25.75
+  response: '7780462021067'
