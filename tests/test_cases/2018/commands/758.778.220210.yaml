@@ -1,0 +1,5 @@
+command_id: 758.778.220210
+test_cases:
+- expected_values:
+    KICKS_TPW_RL: 28
+  response: '7780462021070'

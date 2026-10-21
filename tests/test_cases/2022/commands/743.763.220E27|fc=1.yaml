@@ -1,0 +1,26 @@
+command_id: 743.763.220E27|fc=1
+test_cases:
+- expected_values:
+    KICKS_TP_RR: 196.50059
+  response: '76304620E2772'
+- expected_values:
+    KICKS_TP_RR: 198.22428
+  response: '76304620E2773'
+- expected_values:
+    KICKS_TP_RR: 199.94797
+  response: '76304620E2774'
+- expected_values:
+    KICKS_TP_RR: 201.67166
+  response: '76304620E2775'
+- expected_values:
+    KICKS_TP_RR: 203.39535
+  response: '76304620E2776'
+- expected_values:
+    KICKS_TP_RR: 205.11904
+  response: '76304620E2777'
+- expected_values:
+    KICKS_TP_RR: 206.84273
+  response: '76304620E2778'
+- expected_values:
+    KICKS_TP_RR: 208.56642
+  response: '76304620E2779'

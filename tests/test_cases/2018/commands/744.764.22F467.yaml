@@ -1,0 +1,8 @@
+command_id: 744.764.22F467
+test_cases:
+- expected_values:
+    KICKS_ECT: 87
+  response: 7640462F4677F
+- expected_values:
+    KICKS_ECT: 98
+  response: 7640462F4678A

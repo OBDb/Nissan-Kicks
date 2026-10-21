@@ -1,0 +1,35 @@
+command_id: 758.778.220201
+test_cases:
+- expected_values:
+    KICKS_TP_FL_758: null
+  response: '7780462020100'
+- expected_values:
+    KICKS_TP_FL_758: 29.25
+  response: '7780462020175'
+- expected_values:
+    KICKS_TP_FL_758: 29.5
+  response: '7780462020176'
+- expected_values:
+    KICKS_TP_FL_758: 29.75
+  response: '7780462020177'
+- expected_values:
+    KICKS_TP_FL_758: 30
+  response: '7780462020178'
+- expected_values:
+    KICKS_TP_FL_758: 30.25
+  response: '7780462020179'
+- expected_values:
+    KICKS_TP_FL_758: 30.5
+  response: 778046202017A
+- expected_values:
+    KICKS_TP_FL_758: 30.75
+  response: 778046202017B
+- expected_values:
+    KICKS_TP_FL_758: 31
+  response: 778046202017C
+- expected_values:
+    KICKS_TP_FL_758: 31.25
+  response: 778046202017D
+- expected_values:
+    KICKS_TP_FL_758: 31.5
+  response: 778046202017E
