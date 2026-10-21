@@ -4,5 +4,8 @@ test_cases:
     KICKS_TP_FL_758: null
   response: '7780462020100'
 - expected_values:
+    KICKS_TP_FL_758: 29.5
+  response: '7780462020176'
+- expected_values:
     KICKS_TP_FL_758: 39
   response: 778046202019C

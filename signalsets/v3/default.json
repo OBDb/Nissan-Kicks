@@ -261,6 +261,10 @@
   "signals": [
     {"id": "KICKS_UP_OXYGEN_SENS_V", "path": "Battery", "fmt": { "len": 16, "max": 327, "div": 200, "unit": "volts" }, "name": "Upstream oxygen sensor voltage"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122B"}, "freq": 30, "dbgfilter": { "to": 2017, "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "KICKS_CC_S", "path": "Cruise control", "fmt": { "len": 16, "max": 3686, "mul": 9, "div": 160, "unit": "kilometersPerHour" }, "name": "Cruise control set speed"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1287"}, "freq": 0.25,
   "signals": [
     {"id": "KICKS_ENG_TGT_TQ", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine target torque"}

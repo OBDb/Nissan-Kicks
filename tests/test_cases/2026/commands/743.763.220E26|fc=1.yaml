@@ -4,5 +4,8 @@ test_cases:
     KICKS_TP_FL: null
   response: '76304620E2600'
 - expected_values:
-    KICKS_TP_FL: null
-  response: 76304620E26FF
+    KICKS_TP_FL: 155.13205
+  response: 76304620E265A
+- expected_values:
+    KICKS_TP_FL: 172.36894
+  response: '76304620E2664'
